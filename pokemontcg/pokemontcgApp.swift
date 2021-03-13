@@ -4,7 +4,7 @@ import SwiftUI
 struct pokemontcgApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(text: .constant(""))
+            ContentView()
         }
     }
 }
