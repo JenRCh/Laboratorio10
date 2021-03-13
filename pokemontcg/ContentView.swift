@@ -71,18 +71,16 @@ struct ContentView: View {
                             Image(systemName: "square.fill").data(url: cardURL)
                                 .frame(width: 150.0, height: 200.0)
                         }
-                        
                     }
                 }
                 if self.pokeCardsVM.pokemonCards.count == 0
                 {
-                    HStack{
                         Text(String("No results found"))
-                    }
                 }
             }.navigationBarTitle("Pokemon TCG")
             .navigationBarItems(
-                leading: TextField("Search for a card", text: $search)
+                leading:
+                TextField("Search for a card", text: $search)
                 .padding(7)
                 .background(Color(.systemGray2))
                 .cornerRadius(8),
