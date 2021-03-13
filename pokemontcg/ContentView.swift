@@ -69,7 +69,7 @@ struct ContentView: View {
                         }
                         if let cardURL = URL(string: card.images.small) {
                             Image(systemName: "square.fill").data(url: cardURL)
-                                .frame(width: 150.0, height: 200.0)
+                                .frame(width: 325.0, height: 375.0)
                         }
                     }
                 }
